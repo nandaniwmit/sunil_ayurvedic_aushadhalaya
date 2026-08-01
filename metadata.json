@@ -1,0 +1,6 @@
+{
+  "name": "Sunil Ayurvedic Aushdhalaya",
+  "description": "Trusted Medical Store & Ayurvedic Pharmacy in Gaya, Bihar offering genuine medicines, healthcare essentials, and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

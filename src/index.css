@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #0A8F6A;
+    --color-primary-hover: #087859;
+    --color-primary-light: #F0FDF4;
+    --color-bg-light: #F8FAFC;
+    --color-border-light: #E2E8F0;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--color-bg-light);
+    color: #1E293B;
+  }
+  
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Dark mode overrides using class-based toggle */
+.dark {
+  color-scheme: dark;
+  background-color: #0F172A;
+  color: #F8FAFC;
+}
+
+/* Clean Minimalism Card Styling */
+.clean-card {
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.01);
+  transition: all 0.2s ease-in-out;
+}
+
+.dark .clean-card {
+  background-color: #1E293B;
+  border-color: #334155;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1E293B;
+}
+
+/* Status Badges */
+.status-badge-available {
+  background-color: #DCFCE7;
+  color: #166534;
+}
+
+.status-badge-limited {
+  background-color: #FEF9C3;
+  color: #854D0E;
+}
+
+.status-badge-out {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+/* Pulse ring effect for WhatsApp / Call */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(10, 143, 106, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 14px rgba(10, 143, 106, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(10, 143, 106, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+
