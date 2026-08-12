@@ -311,15 +311,8 @@ export default function Footer() {
 
           <div>
             <p>
-              Developed by{' '}
-              <a 
-                href="https://main.webmakerit.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-emerald-400 hover:underline font-semibold"
-              >
-                WMIT
-              </a>
+              {' '}
+              <a href="#" className="wmit-popup-trigger hover:text-white underline transition-colors" target="_blank" rel="noopener noreferrer">Developed by WMIT</a>
             </p>
           </div>
         </div>
